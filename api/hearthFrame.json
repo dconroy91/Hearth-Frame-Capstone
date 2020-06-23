@@ -1,0 +1,78 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "email": "barry@email.com",
+            "username": "barry",
+            "password": "abc123"
+        },
+        {
+            "id": 2,
+            "email": "pat@email.com",
+            "username": "pat",
+            "password": "abc123"
+        },
+        {
+            "id": 3,
+            "email": "devin@email.com",
+            "username": "devin",
+            "password": "abc123"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "projectName": "Paint",
+            "projectDescription": "Paint the walls of bedroom.",
+            "userId": 2,
+            "materials": "Behr Asphalt Grey Paint",
+            "estPrice": "$90.00",
+            "priority": "Urgent",
+            "dueDate": "04/30/2021",
+            "roomsId": 1
+        },
+        {
+            "id": 2,
+            "projectName": "Plant shelves",
+            "projectDescription": "Build vertical shelving unit to house plants.",
+            "userId": 2,
+            "materials": "Vertical notched rail x2, Hook Support x8, Pressure treated lumber.",
+            "estPrice": "$90.00",
+            "priority": "Urgent",
+            "dueDate": "04/30/2021",
+            "roomsId": 2
+        }
+    ],
+    "furnishings": [
+        {
+            "id": 1,
+            "userId": 2,
+            "roomId": 2,
+            "furnishName": "Couch",
+            "furnishPrice": "$700.00",
+            "furnishDescription": "3-piece sectional couch"
+        },
+        {
+            "id": 1,
+            "userId": 2,
+            "roomId": 3,
+            "furnishName": "L-Shaped desk",
+            "furnishPrice": "$225.00",
+            "furnishDescription": "L-shaped desk wood material for computer"
+        }
+    ],
+    "rooms": [
+        {
+            "id":1,
+            "roomName": "Master Bedroom"
+        },
+        {
+            "id":2,
+            "roomName": "Living Room"
+        },
+        {
+            "id":3,
+            "roomName": "Home Office"
+        }
+    ]
+}
