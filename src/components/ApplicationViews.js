@@ -1,7 +1,10 @@
 import { Route } from 'react-router-dom'
 import React, { Component } from 'react'
-import RoomCard from './rooms/RoomCard'
 import Home from './home/Home'
+import RoomList from './rooms/RoomList'
+import RoomForm from './rooms/RoomForm'
+import ProjectList from './projects/ProjectList'
+import FurnishingList from './furnishings/FurnishingList'
 //only include these once they are built - previous practice exercise
 
 
@@ -14,9 +17,25 @@ class ApplicationViews extends Component {
         <Route exact path="/" render={(props) => {
           return <Home />
         }} />
-        <Route path="/rooms" render={(props) => {
-          return <RoomCard />
+
+        <Route exact path="/rooms" render={(props) => {
+          return <RoomList {...props} />
         }} />
+
+        {/* this is route to room form */}
+        <Route path="/rooms/new" render={(props) => {
+          return <RoomForm {...props} />
+        }} />
+
+        <Route path="/projects" render={(props) => {
+          return <ProjectList {...props} />
+        }} />
+
+        <Route path="/furnishings" render={(props) => {
+          return <FurnishingList {...props} />
+        }} />
+
+
       </React.Fragment>
     )
   }

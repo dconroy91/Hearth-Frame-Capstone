@@ -3,10 +3,12 @@ small {
   }
   
   header {
-    background-color:darkblue;
-    border: rgb(211, 123, 22) solid 3px;
-    background-image: url(https://sciexaminer.com/wp-content/uploads/2019/10/fireplace-1464166_960_720.jpg);
-    object-fit: cover;
+    background-color:rgba(35, 8, 85, 0.808);
+    border: rgb(202, 175, 20) solid 3px;
+    /* background-image: url(https://sciexaminer.com/wp-content/uploads/2019/10/fireplace-1464166_960_720.jpg); */
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
   }
   
   .site-title {
@@ -27,7 +29,7 @@ small {
     font-size: 1.5em;
     color: cornsilk;
     box-sizing: border-box;
-    background-color: rgb(151, 51, 20);
+    background-color: rgba(172, 43, 34, 0.815);
     list-style-type: none;
   }
   
